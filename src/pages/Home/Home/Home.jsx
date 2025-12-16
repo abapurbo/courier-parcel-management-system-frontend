@@ -9,7 +9,6 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <Brands></Brands>
             <Reviews reviewsPromise={reviewsPromise}></Reviews>
         </div>
     );

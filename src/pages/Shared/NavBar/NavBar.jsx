@@ -15,7 +15,7 @@ const NavBar = () => {
             })
     }
 
-    const links = <>
+    const links = <div className='text-xl flex font-medium  text-black'>
         <li><NavLink to="">Services</NavLink></li>
         <li><NavLink to="/send-parcel">Send a Parcel</NavLink></li>
         <li><NavLink to="/rider">Be a Rider</NavLink></li>
@@ -28,9 +28,9 @@ const NavBar = () => {
         }
         <li><NavLink to="">About Us</NavLink></li>
 
-    </>
+    </div>
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar fixed z-30 shadow-sm bg-linear-to-r  from-[#FFF7F1] via-[#FFF1E6] to-[#FFE8D6]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,7 +38,7 @@ const NavBar = () => {
                     </div>
                     <ul
                         tabIndex="-1"
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        className="menu menu-sm dropdown-content   bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                         {links}
                     </ul>
                 </div>
@@ -47,19 +47,17 @@ const NavBar = () => {
                 </span>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal  px-1">
                     {links}
                 </ul>
             </div>
             <div className="navbar-end">
                 {
                     user ?
-                        <a onClick={handleLogOut} className="btn">Log Out</a>
-                        : <Link className='btn' to="/login">Log in</Link>
+                        <button onClick={handleLogOut} className="btn">Log Out</button>
+                        : <Link className='border-2 text-xl font-bold px-4 border-[#f66f08] text-[#f66f08] rounded-full  py-1' to="/login">Log in</Link>
                 }
-                <Link
-                    className='btn btn-primary text-black mx-4'
-                    to="/rider">Be a Rider</Link>
+                
             </div>
         </div>
     );
