@@ -23,16 +23,7 @@ export default function Testimonials() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto text-center">
-        {/* Section badge */}
-        {/* <div className="flex items-center justify-center mb-6">
-          <div className="inline-flex items-center rounded-full shadow-sm  px-1 py-2 pr-4 border-2 border-[#f66f08] ">
-              <span className="material-icons-outlined text-[#f66f08]  text-sm">emoji_emotions</span>
-           
-            <span className="text-[#f66f08]  font-semibold tracking-wide uppercase">
-              Testimonials
-            </span>
-          </div>
-        </div> */}
+      
 
         {/* Title */}
         <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 ">
@@ -68,7 +59,7 @@ export default function Testimonials() {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-2xl hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex flex-col h-full group"
+              className="bg-white rounded-2xl p-8 shadow-2xl  hover:shadow-lg transition-shadow duration-300 border border-primary flex flex-col h-full group"
             >
               <div className="mb-6">
                 <div className="w-12 h-12 rounded-full bg-[#f66f08] flex items-center justify-center shadow-glow group-hover:scale-110 transition-transform duration-300">
