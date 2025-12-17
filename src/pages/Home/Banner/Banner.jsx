@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Lottie from "react-lottie";
 import deliveyGuy from "../../../assets/lottie/delivery-guy.json";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function Banner() {
 
@@ -15,9 +16,9 @@ export default function Banner() {
   };
 
   return (
-    <div className="relative bg-gradient-to-br  from-[#FFF7F1] via-[#FFF1E6] to-[#FFE8D6] text-gray-800 font-display min-h-screen flex flex-col overflow-hidden">
+    <div className="relative bg-gradient-to-br  h-[600px] from-[#FFF7F1] via-[#FFF1E6] to-[#FFE8D6] text-gray-800 font-display  flex flex-col overflow-hidden">
 
-    
+
       {/* Hero Section */}
       <header className="relative flex-grow flex items-center justify-center pt-16 pb-24 px-6 md:px-12 lg:px-24">
         <div className="max-w-7xl w-full grid md:grid-cols-2 gap-14 items-center mx-auto">
@@ -38,12 +39,10 @@ export default function Banner() {
             <div className="pt-4">
               <a
                 href="#"
-                className="inline-flex items-center gap-2 bg-[#f66f08] hover:bg-primary-hover text-white px-8 py-4 rounded-lg font-semibold shadow-xl shadow-orange-500/30 transition-all hover:-translate-y-1 group"
+                className="inline-flex items-center gap-3 bg-[#f66f08] text-white px-8 py-4 rounded-lg font-semibold shadow-xl shadow-orange-500/30 transition-all hover:-translate-y-1 group"
               >
                 Get started
-                <span className="material-icons-round group-hover:translate-x-1 transition-transform">
-                  arrow_forward
-                </span>
+                <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>

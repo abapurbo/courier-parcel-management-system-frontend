@@ -3,6 +3,11 @@
 @plugin "daisyui";
 
 
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #f66f08;
+}
 
 body {
   font-family: "Urbanist", sans-serif;
